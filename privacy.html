@@ -22,61 +22,18 @@
     border-radius: 12px;
     border: 1px solid #d4af37;
   }
-  h1 {
-    color: #d4af37;
-    font-size: 32px;
-    margin-top: 0;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #d4af37;
-    padding-bottom: 12px;
-  }
-  h2 {
-    color: #e8c976;
-    font-size: 20px;
-    margin-top: 32px;
-    margin-bottom: 12px;
-  }
-  h3 {
-    color: #d4af37;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 8px;
-  }
-  .updated {
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
+  h1 { color: #d4af37; font-size: 32px; margin-top: 0; margin-bottom: 8px; border-bottom: 2px solid #d4af37; padding-bottom: 12px; }
+  h2 { color: #e8c976; font-size: 20px; margin-top: 32px; margin-bottom: 12px; }
+  h3 { color: #d4af37; font-size: 16px; margin-top: 20px; margin-bottom: 8px; }
+  .updated { color: #888; font-size: 14px; margin-bottom: 32px; }
   ul { padding-left: 24px; }
   li { margin: 6px 0; }
   a { color: #e8c976; text-decoration: underline; }
   a:hover { color: #d4af37; }
-  code {
-    background: #000;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: "Courier New", monospace;
-    font-size: 14px;
-    color: #e8c976;
-  }
-  hr {
-    border: none;
-    border-top: 1px solid #333;
-    margin: 32px 0;
-  }
-  .footer {
-    color: #888;
-    font-size: 13px;
-    margin-top: 32px;
-    text-align: center;
-  }
-  .home-link {
-    display: inline-block;
-    margin-bottom: 24px;
-    color: #888;
-    text-decoration: none;
-    font-size: 14px;
-  }
+  code { background: #000; padding: 2px 6px; border-radius: 4px; font-family: "Courier New", monospace; font-size: 14px; color: #e8c976; }
+  hr { border: none; border-top: 1px solid #333; margin: 32px 0; }
+  .footer { color: #888; font-size: 13px; margin-top: 32px; text-align: center; }
+  .home-link { display: inline-block; margin-bottom: 24px; color: #888; text-decoration: none; font-size: 14px; }
   .home-link:hover { color: #d4af37; }
 </style>
 </head>
@@ -85,14 +42,14 @@
   <a href="/" class="home-link">← Back to home</a>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: May 10, 2026</p>
+  <p class="updated">Last updated: May 12, 2026</p>
 
-  <p>This Privacy Policy describes how Content Factory ("we", "us", "our") collects, uses, and shares personal information when you use our service ("Service"). The Service is hosted in Taiwan.</p>
+  <p>This Privacy Policy describes how Content Factory ("we", "us", "our") collects, uses, and shares personal information when creators ("you", "creator") use our content scheduling platform ("Service"). The Service is hosted in Taiwan.</p>
 
-  <p>If you have any questions or concerns about our policy or our practices with regards to your personal information, please contact us at <a href="mailto:oblivion5438@gmail.com">oblivion5438@gmail.com</a>.</p>
+  <p>If you have any questions or concerns about our policy, please contact us at <a href="mailto:oblivion5438@gmail.com">oblivion5438@gmail.com</a>.</p>
 
   <h2>1. Information We Collect</h2>
-  <p>The Service is a personal productivity tool intended for use by the individual account owner. We do not directly collect personal information from end users beyond what is necessary to operate the Service.</p>
+  <p>The Service is a content scheduling platform intended for use by content creators who manage their own TikTok accounts. We do not collect personal information beyond what is necessary to operate the Service.</p>
   <p>We do not collect:</p>
   <ul>
     <li>Names, addresses, or contact details</li>
@@ -105,28 +62,28 @@
   </ul>
 
   <h2>2. Information from Third-Party APIs (TikTok)</h2>
-  <p>To provide the publishing functionality, you may authorize us to access your TikTok account through TikTok's official OAuth 2.0 flow. When you do so, we receive and store the following data on the local device that runs the Service:</p>
+  <p>To provide the publishing functionality, creators may authorize this platform to access their TikTok account through TikTok's official OAuth 2.0 flow. When a creator does so, we receive and store the following data on the creator's local device:</p>
   <ul>
-    <li><code>open_id</code> — a TikTok-issued user identifier (not your username)</li>
+    <li><code>open_id</code> — a TikTok-issued user identifier (not the TikTok username)</li>
     <li><code>access_token</code> — a short-lived credential used to call TikTok APIs (typically valid for 24 hours)</li>
     <li><code>refresh_token</code> — a longer-lived credential used to renew the access_token (typically valid for 365 days)</li>
-    <li><code>scope</code> — the list of permissions you granted (<code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>)</li>
+    <li><code>scope</code> — the list of permissions granted (<code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>)</li>
   </ul>
-  <p>We also send the following content to TikTok on your behalf when you choose to publish a video:</p>
+  <p>We also send the following content to TikTok on the creator's behalf when they publish a video:</p>
   <ul>
-    <li>Video files you have generated within the Service</li>
-    <li>Post metadata (title, description, privacy setting, interaction settings) that you have configured</li>
+    <li>Video files the creator has prepared</li>
+    <li>Post metadata (title, description, privacy setting, interaction settings) configured by the creator</li>
   </ul>
   <p>We do <strong>NOT</strong> collect:</p>
   <ul>
-    <li>Your TikTok username, password, or any other login credentials</li>
-    <li>Your TikTok followers, following list, or social graph</li>
-    <li>Your TikTok video history beyond the videos you publish through the Service</li>
+    <li>TikTok usernames, passwords, or any other login credentials</li>
+    <li>Creator's TikTok followers, following list, or social graph</li>
+    <li>Creator's TikTok video history beyond the videos published through the Service</li>
     <li>Direct messages, comments, or notifications</li>
   </ul>
 
   <h2>3. How We Use Information</h2>
-  <p>We use information solely to provide and facilitate the delivery of the Service to you. We do not:</p>
+  <p>We use information solely to provide and facilitate the delivery of the Service to creators. We do not:</p>
   <ul>
     <li>Send marketing or promotional messages</li>
     <li>Use information for advertising or targeted ads</li>
@@ -135,30 +92,30 @@
   </ul>
 
   <h2>4. Sharing of Information</h2>
-  <p>We do not share your personal information with any third parties. We do not use Google Analytics or similar tracking services.</p>
+  <p>We do not share creator data with any third parties. We do not use Google Analytics or similar tracking services.</p>
 
   <h2>5. Cookies and Tracking</h2>
   <p>The Service does not use cookies, web beacons, or similar tracking technologies. We do not use Google Maps API or any other location tracking technologies.</p>
 
   <h2>6. Data Security</h2>
-  <p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. All authentication tokens are stored locally on the user's device, and are never transmitted to or stored on any server operated by us.</p>
-  <p>However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.</p>
+  <p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. All authentication tokens are stored locally on the creator's own device, and are never transmitted to or stored on any server operated by us.</p>
+  <p>However, despite our safeguards, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.</p>
 
-  <h2>7. Data Retention, Deletion, and Your Privacy Rights</h2>
+  <h2>7. Data Retention, Deletion, and Privacy Rights</h2>
 
   <h3>Storage location and duration</h3>
-  <p>All authentication tokens (<code>access_token</code>, <code>refresh_token</code>, <code>open_id</code>) are stored locally on the device that runs the Service, in the file <code>tokens/tiktok_token.json</code>. They are never transmitted to or stored on any server operated by us.</p>
+  <p>All authentication tokens (<code>access_token</code>, <code>refresh_token</code>, <code>open_id</code>) are stored locally on the creator's device, in the file <code>tokens/tiktok_token.json</code>. They are never transmitted to or stored on any server operated by us.</p>
   <p>Tokens persist on the local device until one of the following occurs:</p>
   <ul>
-    <li>You delete them manually from the local file</li>
-    <li>You revoke authorization from your TikTok account settings (<em>Settings &gt; Security &amp; Privacy &gt; Manage app permissions</em>)</li>
+    <li>The creator deletes them manually from the local file</li>
+    <li>The creator revokes authorization from TikTok account settings (<em>Settings &gt; Security &amp; Privacy &gt; Manage app permissions</em>)</li>
     <li>The <code>refresh_token</code> expires (approximately 365 days after issue)</li>
   </ul>
 
-  <h3>Your rights</h3>
-  <p>You have the right to:</p>
+  <h3>Creator rights</h3>
+  <p>Creators have the right to:</p>
   <ul>
-    <li>Revoke this app's access to your TikTok account at any time through TikTok's settings page</li>
+    <li>Revoke this app's access to their TikTok account at any time through TikTok's settings page</li>
     <li>Delete all locally stored tokens by removing the <code>tokens/</code> directory in the Service installation</li>
     <li>Request information about, correction of, or deletion of any personal data, by contacting us at the email below</li>
   </ul>
@@ -178,7 +135,7 @@
   </p>
 
   <hr>
-  <p class="footer">This Privacy Policy was last updated on May 10, 2026.</p>
+  <p class="footer">This Privacy Policy was last updated on May 12, 2026.</p>
 </div>
 </body>
 </html>
